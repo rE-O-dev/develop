@@ -2,8 +2,10 @@ doctype html
 html
     head
     body
+        link(href="/script/css/style.css" rel="stylesheet")
+        script(src="/script/js/bundle.js")
         include ./layout/header.pug
-        script(src="../dist/js/bundle.js")
+        
         div This button
         button(click="crawling()") Click
         div is Crawling the https://www.yna.co.kr/sports/all

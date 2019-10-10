@@ -8,7 +8,7 @@ const
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'html'));
 
-app.use('/crawling', express.static(__dirname + "/crolling"));
+app.use("/script", express.static(__dirname + "/dist") );
 
 app.use('/', route);
 
