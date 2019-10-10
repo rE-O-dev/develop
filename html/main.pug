@@ -1,3 +1,13 @@
-extends ./layout
-block content
-    div Hello!
+doctype html
+html
+    head
+    body
+        include ./layout/header.pug
+        script(src="../dist/js/bundle.js")
+        div This button
+        button(click="crawling()") Click
+        div is Crawling the https://www.yna.co.kr/sports/all
+        div(id="crawling-div")
+
+        include ./layout/footer.pug
+    
