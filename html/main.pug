@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+    body
+        link(href="/script/css/style.css" rel="stylesheet")
+        script(src="/script/js/bundle.js")
+        include ./layout/header.pug
+        
+        div This button
+        button(id="crawlling") Click
+        div is Crawling the https://www.yna.co.kr/sports/all
+        div(id="crawling-div")
+
+        include ./layout/footer.pug
+    
